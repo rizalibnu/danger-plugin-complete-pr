@@ -20,9 +20,9 @@ _dangerfile.js_
 import * as pullRequest from 'danger-plugin-pull-request'
 
 pullRequest.checkAssignees();
-pullRequest.checkDescription(10);
+pullRequest.checkDescription(1000);
 pullRequest.checkTitle(/^\[[A-Za-z]+-\d+\]/);
-pullRequest.checkPRSize();
+pullRequest.checkPRSize(50);
 pullRequest.checkMergeSquashChecked(); // GitLab only
 pullRequest.checkDeleteSourceBranchChecked(); // GitLab only
 ```

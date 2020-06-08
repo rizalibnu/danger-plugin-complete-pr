@@ -27,7 +27,7 @@ export const checkAssignees = (reporter: Reporter = fail) => {
  * @param reporter The reporter function if the check fails.
  */
 export const checkDescription = (
-  minimumLength: number = 10,
+  minimumLength: number,
   reporter: Reporter = fail
 ) => {
   const description = danger.gitlab
