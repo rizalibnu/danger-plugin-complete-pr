@@ -1,6 +1,6 @@
 {
   "name": "danger-plugin-pull-request",
-  "description": "Danger plugin for pull request activity",
+  "description": "A Danger plugin to verify the completion of a pull request",
   "author": {
     "name": "Rizal Ibnu",
     "email": "muhamadrizalibnuabdulah@gmail.com"
