@@ -28,11 +28,11 @@
     "test": "jest",
     "predocs": "rm -rf docs/",
     "docs": "esdoc -c .esdoc.json",
-    "prepublish": "npm run build",
+    "prepublish": "yarn build",
     "semantic-release": "semantic-release",
     "prettier": "prettier",
-    "prettier-write": "npm run prettier",
-    "prettier-project": "npm run prettier-write -- 'src/**/*.{ts,tsx}'",
+    "prettier-write": "yarn prettier",
+    "prettier-project": "yarn prettier-write -- 'src/**/*.{ts,tsx}'",
     "lint": "tslint \"src/**/*.ts\""
   },
   "license": "MIT",
@@ -69,7 +69,7 @@
   "lint-staged": {
     "*.@(ts|tsx)": [
       "tslint --fix",
-      "npm run prettier-write --",
+      "yarn prettier-write --",
       "git add"
     ]
   },
