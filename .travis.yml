@@ -9,7 +9,7 @@ notifications:
 node_js:
   - '13'
 after_success:
-  - yarn semantic-release
+  - $NPM_TOKEN GH_TOKEN=$GH_TOKEN yarn semantic-release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
