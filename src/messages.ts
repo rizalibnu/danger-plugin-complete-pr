@@ -4,7 +4,7 @@ declare const danger: DangerDSLType;
 const pullReqName = () => (danger.gitlab ? 'merge request' : 'pull request');
 
 export const noAssignee = () =>
-  `There are no assignees to this ${pullReqName()}.`;
+  `Please assign someone to merge this ${pullReqName()}, and optionally include people who should review.`;
 
 export const noDescription = () =>
   `This ${pullReqName()} does not have a description.`;
@@ -20,7 +20,7 @@ export const titleDoeNotMatch = (pattern: RegExp | string) =>
   }`;
 
 export const bigPR = () =>
-  `Big ${pullReqName()} better split into several ${pullReqName()}`;
+  `This ${pullReqName()} size seems relatively large. If ${pullReqName()} contains multiple changes, split each into separate ${pullReqName()} will helps faster, easier review.`;
 
 export const refactorCode = () => '🎉 Yay! Cheers for some code refactoring!';
 
