@@ -1,0 +1,17 @@
+language: node_js
+sudo: false
+cache:
+  yarn: true
+  directories:
+    - node_modules
+notifications:
+  email: false
+node_js:
+  - '13'
+  - '12'
+  - '10'
+after_success:
+  - yarn semantic-release
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
