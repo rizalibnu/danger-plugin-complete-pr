@@ -37,8 +37,7 @@ export const checkDescription = (
 
   if (!description) {
     reporter(messages.noDescription());
-  }
-  if (!descriptionIsLongEnough) {
+  } else if (!descriptionIsLongEnough) {
     reporter(messages.descriptionNotLongEnough(minimumLength));
   }
 };
